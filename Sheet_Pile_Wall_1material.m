@@ -1,9 +1,7 @@
- %% Exercise 2.1: Sheet Pile Wall problem - Confined fluid flow
- 
+ %% Sheet Pile Wall problem - Confined fluid flow
+ %
  % Solution for uniform permeability case. 
- 
-% The goal of this exercise is to understand how to solve a problem of 
-% confined fluid flow by the finite element method
+ %
  
 %% Mesh 
 
@@ -68,7 +66,6 @@ sheet_pile=find((mesh.nodes(:,1)==x_wall-t_wall/2 & mesh.nodes(:,2)>=y_wall)...
     | (mesh.nodes(:,1)>=x_wall-t_wall/2 & mesh.nodes(:,1)<=x_wall+t_wall/2 ...
 & mesh.nodes(:,2)==y_wall) | (mesh.nodes(:,1)==x_wall+t_wall/2 & mesh.nodes(:,2)>=y_wall));
 
-% Now you have to complete the code by finding the nodes related to the
 % remaining boundaries
 
 left_edge=find(mesh.nodes(:,1)==0);
