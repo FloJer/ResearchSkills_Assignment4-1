@@ -10,7 +10,11 @@
 
 % parameters that define the domain
 
-H=.3;T=.3;S=.5;B=.5;D=1; % see figure 1, exercise #2
+H=.3; % heigth of the wall above the excavation ground
+T=.3; % depth of the wall below the excavation ground
+S=.5; % width of the top ground
+B=.5; % width of the excavation ground
+D=1;  % total height of the domain
 x_exc=S+B; % middle point of excavation, x coordinate (symmetrical problem)
 y_exc=D-H; % excavation height, y coordinate
 x_wall=S; % horizontal position of sheetpile wall, x coordinate
