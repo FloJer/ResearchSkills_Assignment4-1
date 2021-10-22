@@ -6,7 +6,11 @@
 %% Mesh 
 
 % parameters that define the domain
-H=.2;T=.4;S=.5;B=.5;D=1; % see figure 1, exercise #2. We are solving 
+H=.3; % heigth of the wall above the excavation ground
+T=.3; % depth of the wall below the excavation ground
+S=.5; % width of the top ground
+B=.5; % width of the excavation ground
+D=1;  % total height of the domain
 % the problem for any of these values, you will have to analyze two 
 % particular cases by the end of the exercise.
 
