@@ -1,7 +1,7 @@
- %% Exercise 2.2: Sheet Pile Wall problem - Confined fluid flow
- 
+ %% Sheet Pile Wall problem - Confined fluid flow
+ %
  % Solution for three soil layers
- 
+ %
 % The goal of this exercise is to understand how to extend the code in 
 % order to consider more than one material in the domain, and to understand 
 % the impact of a intermediate layer with higher permeability
