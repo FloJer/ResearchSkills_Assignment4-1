@@ -1,32 +1,15 @@
-#   Matlab Finite Element routines for the course Computational Geomechanics - Civil 423
+#   Matlab Finite Element routines for simple sheet pile walls (confined flow)
 
-This is a set of matlab routines for 2D (plane-strain & axi-symmetric) Finite Element analysis for laplacian, diffusion, elastic & coupled problems.
+This is a set of Matlab routines for a 2D FEA of the flux at a sheet pile wall.
 
-© All rights reserved. ECOLE POLYTECHNIQUE FEDERALE DE LAUSANNE, Switzerland, Geo-Energy Lab, 2015-2019
+The files Sheet_Pile_Wall_1material.m and Sheet_Pile_Wall_3layers.m contain the code to solve the hydraulic problem.
+Element used: Tri3 (CST, for flow).
+Assembly routines are coded as functions.
+The mesh generation is done using mesh2d, a Delaunay-based unstructured mesh generator (see https://ch.mathworks.com/matlabcentral/fileexchange/25555-mesh2d-delaunay-based-unstructured-mesh-generation for detailed information). This folder may has to be added to the path.
 
-authors:
-Brice Lecampion
+ProjectElementFlux.m and ProjectFlux.m are used to estimate the flux at the nodes.
 
-See the LICENSE.TXT file for more details.
+The set of routines may be extended to 2D plane strain odr axi-symmetric FEA of laplacian, diffusion, elastic & coupled problems.
 
-Weak form operators currently coded:
-- Elasticity: stiffness,  pre stress field , boundary loads
-- Laplacian
-- Mass matrix
-- poroelastic Coupling operator 
+This files are part of the course CIVIL-423 'Computational Geomechanics' and should be regarded as such. Information on licencing (GNU-GPL) is given in the LICENCE file. Credits go to the author Brice Lecampion and his PhD-students at EPFL.
 
-Problem type currently coded up:
-- 2D plane-strain 
-- 2D axi-symmetry
-
-Available Element type:
-- Linear triangular Element (2D) : Tri3 (for flow and elasticity), Tri6 (for elasticity, poroelasticity)
-
-
-For mesh generation, either ones directly script it in matlab (for simple geometries), or use available matlab libraries e.g. MESH2D - Delaunay-based unstructured mesh-generation 
-(https://ch.mathworks.com/matlabcentral/fileexchange/25555-mesh2d-delaunay-based-unstructured-mesh-generation)
-
-
-Element classes - contained the B-matrices, isoparametric mapping etc.
-
-Assembly routines coded as function
