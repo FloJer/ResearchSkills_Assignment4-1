@@ -11,5 +11,5 @@ ProjectElementFlux.m and ProjectFlux.m are used to estimate the flux at the node
 
 The set of routines may be extended to 2D plane strain odr axi-symmetric FEA of laplacian, diffusion, elastic & coupled problems.
 
-This files are part of the course CIVIL-423 'Computational Geomechanics' and should be regarded as such. Information on licencing (GNU-GPL) is given in the LICENCE file. Credits go to the author Brice Lecampion and his PhD-students at EPFL.
+These files are part of the course CIVIL-423 'Computational Geomechanics' and should be regarded as such. Information on licencing (GNU-GPL) is given in the LICENCE file. Credits go to the author Brice Lecampion and his PhD-students at EPFL.
 
